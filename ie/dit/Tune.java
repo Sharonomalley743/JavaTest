@@ -1,7 +1,7 @@
 package ie.dit;
 
 
-public class Tune implements player
+public class Tune 
 {
 	private int x;
 	private String title;
@@ -51,9 +51,9 @@ public class Tune implements player
 
  	       	return sb.toString();
 	}
-	public interface Player()
+	public interface Player
 	{
-		void play()
+		void play();
 		
 	}
 	

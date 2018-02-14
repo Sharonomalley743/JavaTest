@@ -14,12 +14,12 @@ public class TuneBook
 		Tune t = new Tune();
 	}
 
-	public TuneBook()
+	public TuneBook(String name)
 	{
 		BufferedReader inputStream = null;
 
         	try {
-            		inputStream = new BufferedReader(new FileReader("hnj0.abc"));
+            		inputStream = new BufferedReader(new FileReader(name));
             
             		String l;
             		while ((l = inputStream.readLine()) != null) 
@@ -79,7 +79,7 @@ public class TuneBook
         	System.out.println(tb);
 
 	        Tune t = tb.findTune("Scotsman over the Border");
-        	//t.play();
+        	t.play();
     	}
 	
 }
