@@ -1,6 +1,9 @@
 package ie.dit;
 
 import java.util.ArrayList;
+import java.io.IOException;
+import java.io.FileReader;
+import java.io.BufferedReader;
 
 public class TuneBook
 {
@@ -11,17 +14,22 @@ public class TuneBook
 		
 	}
 	
+	public void tune()
+	{
+		Tune t = new Tune();
+	}
+
 	public void loadtune()
 	{
 		BufferedReader inputStream = null;
 
         	try {
-            		inputStream = new BufferedReader(new FileReader("words.txt"));
+            		inputStream = new BufferedReader(new FileReader("hnj0.abc"));
             
             		String l;
             		while ((l = inputStream.readLine()) != null) 
 			{
-                		words.add(l);
+                		System.out.println(l);
             	   	}
                     }
         	catch (IOException e)
@@ -42,6 +50,28 @@ public class TuneBook
                 		}
 			}
 		}    
-        }
+    }
+	
+	public String toString()
+    	{
+        	StringBuffer sb = new StringBuffer();
+        	for(String tune:tunes)
+        	{
+            		sb.append(tune + ",\n ");
+        	}
+
+ 	       	return sb.toString();
+	}
+	
+	
+	
+	public static void main(String[] args)
+    	{
+//        	TuneBook tb = new TuneBook("hnj0.abc");
+  //      	System.out.println(tb);
+
+//	        Tune t = tb.findTune("Scotsman over the Border");
+  //      	t.play();
+    	}
 	
 }
