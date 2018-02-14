@@ -8,12 +8,6 @@ public class Tune
 	private String altTitle;
 	private String notation;
 	
-	public Tune()
-    {
-     //   ();
-	//	();
-	//	();
-    }
 	public int x()
 	{
 		
@@ -33,7 +27,7 @@ public class Tune
 	public String toString()
     	{
         	StringBuffer sb = new StringBuffer();
-        	for(String word:x)
+        	for(int num:x)
         	{
             		sb.append(word + ", ");
 					for(String wordd:title)
