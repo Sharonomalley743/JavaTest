@@ -61,16 +61,7 @@ public class TuneBook
 	public Tune findTune(String title)
 	{
 		String s = title;
-		//if (s.equalsIgnoreCase(tunes))
-		//{
-		//	System.out.println("Same");
-		//}
-		//else
-		//{
-		//	System.out.println("Different");
-		//}
-		
-		
+		System.out.println(tunes.contains(s));
 	}
 	
 	public static void main(String[] args)
