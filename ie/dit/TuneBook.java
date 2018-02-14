@@ -9,11 +9,6 @@ public class TuneBook
 {
 	ArrayList<String> tunes = new ArrayList<String>();
 	
-	public TuneBook()
-	{
-		
-	}
-	
 	public void tune()
 	{
 		Tune t = new Tune();
@@ -53,7 +48,7 @@ public class TuneBook
     }
 	
 	public String toString()
-    	{
+    {
         	StringBuffer sb = new StringBuffer();
         	for(String tune:tunes)
         	{
@@ -63,15 +58,28 @@ public class TuneBook
  	       	return sb.toString();
 	}
 	
-	
+	public Tune findTune(String title)
+	{
+		String s = title;
+		//if (s.equalsIgnoreCase(tunes))
+		//{
+		//	System.out.println("Same");
+		//}
+		//else
+		//{
+		//	System.out.println("Different");
+		//}
+		
+		
+}
 	
 	public static void main(String[] args)
     	{
-//        	TuneBook tb = new TuneBook("hnj0.abc");
-  //      	System.out.println(tb);
+        	TuneBook tb = new TuneBook("hnj0.abc");
+        	System.out.println(tb);
 
-//	        Tune t = tb.findTune("Scotsman over the Border");
-  //      	t.play();
+	        Tune t = tb.findTune("Scotsman over the Border");
+        	//t.play();
     	}
 	
 }
