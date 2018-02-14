@@ -14,7 +14,7 @@ public class TuneBook
 		Tune t = new Tune();
 	}
 
-	public void loadtune()
+	public TuneBook()
 	{
 		BufferedReader inputStream = null;
 

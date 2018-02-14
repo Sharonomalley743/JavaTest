@@ -1,7 +1,7 @@
 package ie.dit;
 
 
-public class Tune
+public class Tune implements player
 {
 	private int x;
 	private String title;
@@ -14,7 +14,18 @@ public class Tune
 	//	();
 	//	();
     }
-	
+	public int x()
+	{
+		
+	}
+	public String title()
+	{
+		
+	}
+	public String altTitle()
+	{
+		
+	}
 	public String getNotation()
 	{
 	}
@@ -40,4 +51,10 @@ public class Tune
 
  	       	return sb.toString();
 	}
+	public interface Player()
+	{
+		void play()
+		
+	}
+	
 }
